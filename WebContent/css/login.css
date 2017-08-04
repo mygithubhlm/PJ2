@@ -1,0 +1,97 @@
+@charset "utf-8";
+/*背景图片*/
+body{ 
+	text-align: center;
+	background-image: url(../图片/background.jpg);
+	background-size: cover;
+}
+
+/*登录界面*/
+div.login_1 {
+	text-align: left;
+	padding-left: 50px;
+	position: relative;
+	margin-top: 15%;
+	left: 30%;
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	background-color: rgba(225,225,225,0.5);
+	display: block;
+}
+#regg {
+	padding-top:30px;
+	float:right;
+}
+form {
+	background-color: rgba(225,225,225,0.9);
+	width: 80%;
+}
+img.logo {
+	margin-top: 10px;
+	width: 50px;
+	height:50px;
+}
+
+p#tip {
+	text-align: left;
+}
+
+p#userName_1 {
+	text-align: left;
+}
+
+p#password_1 {
+	text-align: center;
+}
+
+label#theButtons {
+	padding-left: 60%;
+
+}
+
+label#theButtons input:hover{
+	color: red;
+  
+}
+
+
+ul {
+	text-align: right;
+	margin-right: 15px;
+	font-size: 24px;
+}
+ul li a {
+ 	text-align: right;
+ 	text-decoration: none;
+}
+
+ul li a:hover {
+	color:red;
+ 	text-decoration: none;
+}
+
+ul li {
+		display: inline;
+	 	list-style-type: none;
+ 		text-decoration: none;
+}
+
+/*用户名的输入框*/
+#userNameInput {
+	height:40px;
+	font-size: 20px;
+}
+
+/*密码的输入框*/
+#passWordInput {
+	height:40px;
+	font-size: 20px;
+}
+
+label#name{
+	margin-top: 10px;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+}

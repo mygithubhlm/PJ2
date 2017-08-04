@@ -1,0 +1,61 @@
+@charset "utf-8";
+/*背景*/
+body {
+	background-image: url(../图片/background1.jpg);
+	padding-left: 7%;
+	background-size: cover;
+}
+
+div.writeBlog {
+	background-color:rgba(225,225,225,0.8);
+	width: 90%;
+	height: 80%;
+}
+
+/*输入框*/
+div.writeBlog p#theTitle input {
+	width: 90%;
+	margin-left: 5%;
+}
+
+div.writeBlog p#title {
+	margin-left: 5%;
+	color: red;
+}
+
+/*文本框*/
+div.writeBlog p#content textarea {
+	width: 90%;
+	margin-left: 5%;
+	height: 500px;
+}
+
+p#special {
+	margin-left: 5%;
+}
+
+p span a {
+	text-decoration: none;
+	color: red;
+}
+
+p span a:hover {
+	background-color: yellow;
+}
+
+label#fill {
+	margin-left: 5%;
+}
+
+label#fill input {
+	width: 300px;
+}
+
+/*使按钮居中*/
+p#submit  {
+	text-align: center;
+}
+
+p#submit input:hover {
+	color: red;
+}

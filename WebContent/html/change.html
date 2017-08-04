@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>修改个人资料</title>
+</head>
+<body>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="../js/change.js"></script>
+修改个人资料：<br />
+(为保障您的账户安全请输入您的用户名和密码！))<br />
+(如果想要上传图片作为头像，请输入图片的绝对路径，注意不要输错哦)
+(在输入时，用斜杠代替反斜杠)
+<br />
+<br />
+ <form name="zc" method="post" action="../jsp/change.jsp" 
+ onsubmit="return zcjc(yhm.value,mm.value,qm1.value);">
+          <div>
+                    账　　号： 
+                    <input name="yhm" type="text" size="20" value="" placeholder="您的账号">
+                    <br /> <br />
+                    密　　码： 
+                    <input name="mm" type="password" size="20" value=""
+                     placeholder="密码">
+                    <br /> <br />
+                   修改密码：                           <input name="qm1" type="password" size="20" value=""
+                    placeholder="新密码">
+                    <br /> <br /> 
+                   
+                    上传图片：                            <input type="text" id="pp" name="pic" />
+                    <input type="submit" name="z" value="提   交"  />
+          </div>
+        </form>
+</body>
+</html>

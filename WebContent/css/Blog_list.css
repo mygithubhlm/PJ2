@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*背景*/
+body {
+	width: 1000px;
+	text-align: left;
+	padding-left: 8%;
+	padding-top: 20px;
+	background-image: url(../图片/background1.jpg);
+	background-position: 0px 0px;
+	margin: 0 auto 0 auto;
+	background-size: cover;
+}
+
+/*标题属性*/
+p#title {
+	font-size: 30px;
+	font-color: blue;
+	margin-bottom: -10px;
+
+}
+
+/*主菜单*/
+ul#mainMeau {
+	text-align: center;
+	padding-left: 20px;
+	/*width:270px;*/
+	width: 28%;
+	min-width: 330px;
+	height:30px;
+	font-size: 16px;
+	padding-top: 8px;
+	border-radius: 5px;
+	background-color: rgba(123,231,231,0.7);
+	
+}
+
+ul#mainMeau li#light {
+	font-weight: bold;
+}
+
+/*连接*/
+ul#mainMeau li a {
+	padding-right:10px;
+	list-style-type: none;
+	text-decoration: none;
+    
+}
+
+ul#mainMeau li a:hover {
+	font-weight: bold;
+	color: green;
+	list-style-type: none;
+	text-decoration: none;
+    
+}
+
+ul#mainMeau li.border {
+	border-right: 1px dotted;
+}
+
+ul#mainMeau li {
+	display: inline;
+}
+
+
+/*左上角的快*/
+div#left_up {
+	float: left;
+	background-color: rgba(123,231,231,0.7);
+	/*width: 250px;*/
+	border-radius: 10px;
+	width: 20%;
+	min-width: 150px;
+	height: auto;
+	clear: left;
+}
+
+div#left_up p {
+	padding-left: 10px;
+    padding-top: 10px;
+}
+div#left_up ul {
+	margin-top: 20px;
+	list-style-type: disc;
+    padding-bottom: 20px;
+}
+
+div#left_up ul li a {
+	text-decoration: none;
+}
+
+div#left_up ul li a:hover {
+	background-color: red;
+	font-weight: bold;
+}
+
+/*中间的块*/
+div#center {
+	border-radius: 10px;
+	float:right;
+	clear: none;
+	height:470px;
+	width: 65%;
+	min-width: 300px;
+    margin-right: 10%;
+    background-color: rgba(123,231,231,0.7);
+}
+
+div#center ul li a.before {
+	text-align: left;
+	text-decoration: none;
+	font-size: 18px;
+}
+div#center ul li {
+	padding-top: 25px;
+	width: 90%;
+}
+div#center ul li a:hover {
+	font-weight: bold;
+	color: rgb(111,222,143);
+}
+
+div#center ul li a.after {
+	float: right;
+	margin-right: 0px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+	
+}
+
+table tr td {
+	text-align: right;
+}
+/*左下角的块*/
+div#left_down {
+	float: left;
+	clear: left;
+	position: relative;
+	background-color: rgba(123,231,231,0.7);
+	width: 20%;
+	min-width: 150px;
+	height: auto;
+	padding-top:5px;
+    padding-bottom: 5px;
+    margin-top:30px;
+    border-radius: 10px;
+}
+
+div#left_down p {
+	padding-left: 10px;
+	padding-bottom: 0px;
+}
+ 
+div#left_down p input.in {
+    width: 100px;
+}
+/*div#center {
+	float:right;
+	position: absolute;
+	height:auto;
+	width: 600px;
+    margin-top: -272px;
+    margin-left: 300px;
+    margin-right: 100px;
+    background-color: rgba(225,225,225,0.8);
+}*/
+
+
+/*小面的版权栏*/
+div#footer {
+	margin-top:30px;
+	margin-left:80px;
+	text-align: center;
+	text-transform: uppercase;
+    border-radius: 20px;
+    width :67%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clear:both;
+    background-color: rgba(225,225,225，0);
+}
+
+/*发博文*/
+div#writeBlog {
+	/*position: absolute;*/
+	height: 28px;
+	width: 80px;
+	margin-top: -50px;
+	/*margin-left: 820px;*/
+	float: right;
+	clear: none;
+	margin-right:10%;
+	background-color: rgb(225,180,200);
+	text-align: center;
+	border-radius: 5px;
+}
+
+div#writeBlog img {
+	padding-top: 3px;
+	width: 20px;
+	height: 20px;
+}
+div#writeBlog a {
+	font-size: 12px;
+	text-decoration: none;
+	vertical-align: super;
+}
+div#writeBlog a:hover {
+	color: red;
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body{ 
+	background-image: url(../图片/background.jpg);
+	background-size: cover;
+}
+
+div#div1 {
+	margin-top: 50px;
+	margin-left: 25%;
+	margin-right: auto;
+}
+
+input {
+	line-height: 24px;
+}
+
+input.button {
+	text-align: right;
+	width: 40px;
+	height:28px;
+	background-color: #eaeaea;
+}
+input.button:hover{
+	background-color: #f9f9f9; 
+	cursor: pointer;
+}
+textarea {
+	line-height: 24px;
+}
+
+td.check { 
+		color:#C00; 
+		font-weight:bold; 
+}

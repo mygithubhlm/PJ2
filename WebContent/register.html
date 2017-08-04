@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>register</title>
+  <meta charset="utf-8" />
+</head>
+<body>
+<script language='javascript'>
+function validate(userfield) {
+    if (userfield.value.length != 0) {
+        var xmlHttpRequest = null;
+        var url = "AccountIsExistServlet?account=" + userfield.value;
+        var usermsg = document.getElementById("usermsg");
+        if (window.XMLHttpRequest) {//表示当前浏览器不是IE
+            xmlHttpRequest = new XMLHttpRequest();
+        } else if (window.ActiveXObject) {
+            xmlHttpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlHttpRequest.open("GET", url, true);//设置请求方式为GET，设置请求的URL，设置为异步提交
+        xmlHttpRequest.onreadystatechange = function(){//将方法地址复制给onreadystatechange属性
+            if(xmlHttpRequest.readyState == 4){//Ajax引擎状态为成功
+                if(xmlHttpRequest.status == 200){//HTTP协议状态为成功
+                    if(xmlHttpRequest.responseText != "true"){
+                    usermsg.innerHTML = "恭喜您，用户名可以使用。 ";
+                    }else{
+                    usermsg.innerHTML = "<font color='red'>" + "该用户名已被注册" + "</font>";
+                    userfield.focus();
+                    }
+                }else{
+                    alert("请求失败，错误码=" + xmlHttp.status);
+                }
+            }
+        };
+        xmlHttpRequest.send(null);//将设置信息发送到Ajax引擎
+    }else{
+        usermsg.innerHTML = "";
+    }
+}
+function zcjc(yhm,mm,xmm,qm)
+{
+  var str = mm;
+  if (mm.length < 6) 
+  {
+    alert('密码不能小于六个字符');
+    document.zc.mm	.focus();
+    return false;
+  }
+  for (var i = str.length - 1; i >= 0; i--) {
+    if (str.charCodeAt(i) < 48 || (str.charCodeAt(i) > 57 && str.charCodeAt(i) < 65) || (str.charCodeAt(i) > 90 && str.charCodeAt(i) < 97) || str.charCodeAt(i) > 122){
+          alert('密码只能用字母和数字');//字符是按顺序进行编码的，例如，字符A的编码是65，字符B的编码是66，依此类推。小写字母从97开始编码，即字母a的编码是97，字母b的编码是98，依此类推。数字字符则是从48开始编码，字符0的编码是48，而字符9的编码是57。
+          document.zc.mm.focus();
+          return false;
+    }
+  };
+ if (yhm.length > 10) 
+  {
+    alert('用户名不能超过十个字符');
+    document.zc.yhm.focus();
+    return false;
+  }
+  if (qm.length > 10) 
+  {
+    alert('不能超过十个字符');
+    document.zc.qm.focus();
+    return false;
+  };
+ if(yhm=="")
+ {
+  alert('账号不能为空!');
+  document.zc.yhm.focus();
+  return false;
+ }
+ if(yhm.indexOf("'")>=0 ||yhm.indexOf("<")>=0 ||yhm.indexOf(">")>=0 ||yhm.indexOf(".")>=0)
+ {
+  alert('用户名不能有乱码!');
+  document.zc.yhm.focus();
+  return false;
+ }
+ if(mm=="")
+ {
+  alert('密码不能为空!');
+  document.zc.mm.focus();
+  return false;
+ }
+ if(mm.indexOf("'")>=0 ||mm.indexOf("<")>=0 ||mm.indexOf(">")>=0 ||mm.indexOf(".")>=0)
+ {
+  alert('不能有乱码!');
+  document.zc.mm.focus();
+  return false;
+ }
+ if (qxmm.length > 10) 
+  {
+     alert('不能超过十个字符');
+  document.zc.qxmm.focus();
+  return false;
+  };
+ if(mm.length> 20)
+ {
+  alert('不能超过二十个字符');
+  document.zc.mm.focus();
+  return false;
+ }
+}
+</script>
+ <form name="zc" method="post" action="http://localhost:8080/PJ2/reg.jsp" onsubmit="return zcjc(yhm.value,mm.value,qxmm.value,qm.value);">
+          <div align="left">
+                  <p>姓　　名： 
+                    <input type="text" name="qm" size="20" maxlength="50" value="" placeholder="不超过十个字符">
+                    <br /> <br /> 
+                    
+                    <tr height="30px;">
+   					<td><font color="#FF0000">*</font>账　　号：</td>
+    				<td><input type="text" name="yhm" maxlength="12" onblur="validate(this)" size="20" value="" placeholder="不超过十个字符"></td>
+   					<td width="220px;"><span id="usermsg"></span></td>
+</tr>
+                    <br /> <br />
+                    
+                    <font color="#FF0000">*</font>密　　码： 
+                    <input name="mm" type="password" size="20" value="" placeholder="只有数字和字母,不超过二十个字符">
+                    <br /> <br />
+                    <font color="#FF0000">*</font>爱　　好： 
+                    <input name="qxmm" type="text" size="20" value="" placeholder="不超过十个字符">
+                    <br /> <br />
+                    <font color="#FF0000">*</font>   性　　别:        
+                    <input type="radio" name="sex" value="1" checked="checked" />男
+                    <input type="radio" name="sex" value="0" />女
+                    <br /> <br />
+                    <font color="#FF0000">*</font>邮　　箱： 
+                    <input name="lxfs" type="email" size="20" maxlength="50">
+                  </p>
+                  <p align="center"> 
+                    <input type="submit" name="zc" value="提   交"  />
+                  </p>
+                </div>
+        </form>
+</body>
+</html>

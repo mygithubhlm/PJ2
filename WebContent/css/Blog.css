@@ -1,0 +1,319 @@
+body {/*背景图片和其大小*/
+	width: 1200px;
+	text-align: left;
+	padding-left: 0%;
+	padding-top: 20px;
+	background-image: url(../图片/background1.jpg);
+	background-position: 0px 0px;
+	margin: 0 auto 0 auto;
+	background-size: cover;;
+}
+/*标题*/
+p#title {
+	font-size: 30px;
+	font-color: #0938F7;
+	margin-bottom: -10px;
+}
+
+/*主菜单*/
+ul#mainMeau {
+	min-width: 330px;
+	text-align: left;
+	padding-left: 0px;
+	width:30%;
+	height:30px;
+	font-size: 16px;
+	padding-top: 8px;
+	background-color: rgba(225,225,225,0.7);
+	border-radius: 5px;
+	
+}
+
+/*此为选中的页面*/
+ul#mainMeau li.light {
+	font-weight: bold;
+}
+
+ul#mainMeau li a {
+	font-size: 16px;
+	padding-right:10px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+ul#mainMeau li a:hover {
+	font-weight: bold;
+	color: green;
+	list-style-type: none;
+	text-decoration: none;
+    
+}
+
+ul#mainMeau li.border {
+	border-right: 1px dotted;
+}
+
+ul#mainMeau li {
+	display: inline;
+}
+
+
+/*左上角的块*/
+div#left_up {
+	float: left;
+	clear: left;
+	border-radius: 10px;
+	background-color: #fa7d3c;
+	width: 25%;
+	min-width: 150px;
+	max-height: 600px;
+	height: auto;
+
+}
+
+div#left_up img {
+	/*width: 190px;
+	height: 190px;*/
+	width: 90%;
+	height: 350px;
+}
+
+div#left_up  {
+	text-align: center;
+}
+
+div#left_up p#classOne {
+	font-color: #F70909;
+	font-family: Serif;
+	padding-top: 10px;
+	margin-bottom: 3px;
+	text-align: left;
+    margin-left: 10px;
+}
+
+div#left_up p.two {
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+
+div#left_up p.name {
+	margin-top:0px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted;
+}
+
+/*中间显示区*/
+div#center {
+	float: right;
+	clear: right;
+	height:auto;
+	width: 60%;
+	min-width: 300px;
+    margin-right: 10%;
+    background-color: rgba(100,200,160,0.8);
+    text-align: left;
+    /*padding-left: 20px;
+    padding-right: 20px;*/
+}
+
+p#mainNews  {
+	text-indent: 2em;
+	font-size: 18px;
+}
+
+pre {
+	text-indent: 2em;
+	font-size: 18px;
+}
+ p.title span#bigTitle {
+	font-size: 24px;
+	color: red;
+	font-weight: bold;
+}
+
+div#Blog_3 {
+	padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+	border-bottom: 1px dotted;
+}
+
+p.title span#time {
+	font-size: 10px;
+}
+
+/*#Blog_1 .tip0 {
+	display: inline;
+} 
+*/
+ul.tip {
+	margin-left:-40px;
+}
+
+.tip0 ul.tip li {
+	display: inline;
+	list-style-type: none;
+}
+
+.tip0 ul.tip li.color {
+	color: green;
+}
+
+.AllContent  li {
+	list-style-type: none;
+}
+
+#read {
+	margin-left: -40px;
+}
+
+#read li {
+	list-style-type: none;
+	display: inline;
+	color: #8B5A00;
+}
+
+#read li.border {
+	border-right: 1px dotted;
+	padding-right: 9px;
+}
+#read li a {
+	text-decoration: none;
+	color: #8B5A00;
+}
+ 
+#read li:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#read li a:hover {
+	color: red;
+	cursor: pointer;
+}
+/*木卫二照片*/
+img#muwei {
+	width:98%;
+	height: 300px;
+}
+
+p.comment0 {
+	background-color: rgba(212,21,13,0.8);
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+div#comment {
+	background-color: rgba(225,225,225,0.7);
+	padding-bottom: 10px;
+	border-radius: 10px;
+}
+
+.cTime {
+	padding-bottom: 30px;
+	border-bottom: 1px dotted;
+}
+textarea.writeComment {
+	width: 100%;
+	height: 300px;
+}
+
+p#submit {
+	text-align: center;
+}
+
+input#sendC:hover {
+	color: red;
+}
+
+div p.name {
+	color: green;
+}
+
+p span#last {
+	float: right;
+}
+
+p span.last0 {
+	float: right;
+}
+
+p span.sb {
+	color: blue;
+}
+p span.sb:hover {
+	color:red;
+	cursor:pointer;
+}
+p.cTime span.timetime {
+	font-size: 12px;
+}
+
+p.cTime span.delete {
+	color: blue;
+	float: right;
+}
+
+p.cTime span.delete:hover{
+	cursor:pointer;
+}
+/*左下角的块*/
+div#left_down {
+	background-color: rgba(133,189,245,0.8);
+	clear:left;
+	float: left;
+	width: 25%;
+	min-width: 150px;
+	border-radius: 10px;
+	height: auto;
+	margin-top: 20px;
+	padding-top:5px;
+    padding-bottom: 5px;
+}
+
+div#left_down p {
+	font-weight: bold;
+	padding-left: 10px;
+	padding-bottom: 0px;
+
+}
+
+div#left_down ul {
+	padding-left:20px;
+}
+div#left_down ul li a.light {
+	font-weight: bold;
+}
+
+div#left_down ul li a {
+	text-decoration: none;
+}
+
+div#left_down ul li a:hover {
+	background-color: red;
+	font-weight: bold;
+}
+
+/*底部的版权栏*/
+div#footer {
+	position:relative;
+	top:30px;
+	left:80px;
+	text-align: center;
+	text-transform: uppercase;
+    border-radius: 20px;
+    width :75%;
+    padding-top: 20px;
+    clear:both;
+    background-color: rgba(225,225,225，0);
+}
+
+*{ margin:0; padding:0;}
+#div1{ width:300px; height:100px; border-radius:10px; background:#f60; box-shadow:5px 5px 10px #ccc; position:absolute; left:50%; margin-left:-150px; z-index:2; opacity:0; filter:alpha(opacity:0); display:none;}
+#div1 h3{ height:20px; background:#60f;}
+#overlay{ width:100%; height:100%; background:#ccc; position:absolute; left:0; top:0; opacity:0; z-index:1; display:none;}
+#closeConfirm{ width:80px; height:20px; line-height:20px; background:#ccc; border-radius:5px; display:block; text-decoration:none; color:#000; text-align:center; position:absolute; bottom:10px; right:10px;}
+#trueConfirm{width:80px; height:20px; line-height:20px; background:#ccc; border-radius:5px; display:block; text-decoration:none; color:#000; text-align:center; position:absolute; bottom:10px; right:100px;}
+#confirmCon{ text-align:center; color:#ccc; height:40px; line-height:40px;}
+

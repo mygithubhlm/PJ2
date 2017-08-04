@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>博客2.0 发博文</title>
+		<link href="../css/Edit.css" rel="stylesheet" type="text/css"/>
+		<script type="text/javascript" src="../js/edit.js"></script>
+</head>
+<body>
+		<div class="writeBlog">
+			<form onsubmit="return prove(input.value,article.value,sign.value,select.value)" action="../jsp/edit.jsp">
+			<p>发博文</p>
+			<p id="title">标题:</p>
+			<p id="theTitle"><input type="text"  name="input" class="input"></p>
+			<!--文本框-->
+			<p id="content"><textarea id="scroll" name="article"></textarea>
+			<!--单选框-->
+			<p id="special"><span>分类：</span> 
+					<select name="select">
+						<option value="科技新闻">科技新闻</option>
+						<option value="休闲时刻">休闲时刻</option>
+						<option value="吃货必看">吃货必看</option>
+						<option value="无法分类">未分类</option>
+					</select>
+					<span><a href="style.html">创建分类</a></span>
+			</p>
+			<label id="fill"><span>标签：</span>
+					<input type="text" id="tiptip" name="sign" placeholder="填写标签，让更多的人看到你的博文(用英文半角逗号连接)">
+			</label>
+			<P id="submit" ><input type="submit"  value="发博文" >
+			</P>
+			</form>
+		</div>
+
+</body>
+</html>

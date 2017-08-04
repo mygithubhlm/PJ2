@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+body {/*背景图片和其大小*/
+	width: 1200px;
+	text-align: left;
+	padding-left: 8%;
+	padding-top: 20px;
+	background-image: url(../图片/background1.jpg);
+	background-position: 0px 0px;
+	margin: 0 auto 0 auto;
+	background-size: cover;;
+}
+/*标题*/
+p#title {
+	font-size: 30px;
+	font-color: #0938F7;
+	margin-bottom: -10px;
+}
+
+/*主菜单*/
+ul#mainMeau {
+	min-width: 330px;
+	text-align: center;
+	padding-left: 0px;
+	width:30%;
+	height:30px;
+	font-size: 16px;
+	padding-top: 8px;
+	background-color: rgba(225,225,225,0.7);
+	border-radius: 5px;
+	
+}
+
+ul#mainMeau li.light {
+	font-weight: bold;
+}
+
+ul#mainMeau li a {
+	font-size: 16px;
+	padding-right:10px;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+ul#mainMeau li a:hover {
+	font-weight: bold;
+	color: green;
+	list-style-type: none;
+	text-decoration: none;
+    
+}
+
+ul#mainMeau li.border {
+	border-right: 1px dotted;
+}
+
+ul#mainMeau li {
+	display: inline;
+}
+
+
+/*左上角的块*/
+div#left_up {
+	float: left;
+	clear: left;
+	border-radius: 10px;
+	background-color: #fa7d3c;
+	width: 25%;
+	min-width: 150px;
+	max-height: 600px;
+	height: auto;
+
+}
+
+div#left_up img {
+	/*width: 190px;
+	height: 190px;*/
+	width: 90%;
+	height: 350px;
+}
+
+div#left_up  {
+	text-align: center;
+}
+
+div#left_up p#classOne {
+	font-color: #F70909;
+	font-family: Serif;
+	padding-top: 10px;
+	margin-bottom: 3px;
+	text-align: left;
+    margin-left: 10px;
+}
+
+div#left_up p.two {
+	font-size: 10px;
+	padding-bottom: 10px;
+}
+
+div#left_up p.name {
+	margin-top:0px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted;
+}
+
+div#right{
+	float:left;
+	padding-left:50px;
+}
